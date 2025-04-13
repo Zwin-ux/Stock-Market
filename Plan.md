@@ -1,4 +1,4 @@
-# GÖDEL TERMINAL - NEXT GEN TRADING SIMULATOR
+# BETTER GÖDEL TO BEAT MARTIN SHKRELLI  TERMINAL - NEXT GEN TRADING SIMULATOR
 
 ## CORE VISION
 "Learn markets by playing markets" - A risk-free environment where beginners:
