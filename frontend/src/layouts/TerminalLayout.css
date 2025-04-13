@@ -1,0 +1,13 @@
+.terminal-grid {
+  display: grid;
+  grid-template:
+    'top-bar top-bar' auto
+    'sidebar main-panel' 1fr
+    'input-bar input-bar' auto / auto 1fr;
+  height: 100vh;
+}
+
+.top-bar { grid-area: top-bar; }
+.sidebar { grid-area: sidebar; }
+.main-panel { grid-area: main-panel; }
+.input-bar { grid-area: input-bar; }

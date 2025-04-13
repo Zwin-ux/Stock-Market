@@ -1,0 +1,424 @@
+/* Modern terminal styling */
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #e2e2e2;
+  font-family: 'Fira Code', monospace;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.modern-terminal {
+  background: #1a1a1a;
+  color: #e0e0e0;
+  font-family: 'SF Mono', 'Roboto Mono', monospace;
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.terminal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 12px;
+}
+
+.terminal-header h1 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #f5f5f5;
+  margin: 0;
+}
+
+.status-indicator {
+  background: #27ae60;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.command-history {
+  margin-bottom: 20px;
+  min-height: 300px;
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 8px;
+  margin-bottom: 16px;
+}
+
+.command {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.command.user {
+  color: #3498db;
+}
+
+.command.system {
+  color: #95a5a6;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.prompt {
+  color: #2ecc71;
+}
+
+.command-input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-family: 'Fira Code', monospace;
+  font-size: 15px;
+  width: 100%;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.command-input:focus {
+  border-color: rgba(52, 152, 219, 0.5);
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+/* Badge system updates */
+.badge-wall {
+  background: #252525;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.badge-wall h3 {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #f5f5f5;
+}
+
+.badge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 8px;
+}
+
+.badge {
+  background: #333;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.badge:hover {
+  transform: translateY(-2px);
+}
+
+.badge.locked {
+  opacity: 0.5;
+}
+
+.lock {
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.simulation-viz {
+  margin: 20px 0;
+  padding: 10px;
+  background: #252525;
+  border-radius: 8px;
+}
+
+.recharts-surface {
+  overflow: visible;
+}
+
+.recharts-cartesian-axis-tick-value {
+  fill: #95a5a6;
+  font-size: 12px;
+}
+
+.recharts-tooltip {
+  background: #333 !important;
+  border: none !important;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+/* Portfolio Component Styles */
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background: rgba(30, 30, 40, 0.7);
+  border-radius: 16px;
+  margin: 20px 0;
+}
+
+.archetype-badge {
+  grid-column: 1 / -1;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stats-panel {
+  grid-column: 1 / -1;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.score-bar {
+  height: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.score-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff5722, #ff9800);
+  border-radius: 5px;
+}
+
+.asset-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.asset-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.buy-button {
+  background: rgba(76, 175, 80, 0.2);
+  border: 1px solid #4caf50;
+  color: #4caf50;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.buy-button:hover {
+  background: rgba(76, 175, 80, 0.4);
+}
+
+.time-travel {
+  margin-top: 15px;
+}
+
+time-travel input[type="range"] {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* News Feed Styles */
+.news-feed {
+  background: rgba(30, 30, 40, 0.7);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.time-machine {
+  margin-bottom: 20px;
+}
+
+.time-machine input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.news-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 4px solid;
+}
+
+.news-item.positive {
+  border-color: #4caf50;
+}
+
+.news-item.negative {
+  border-color: #f44336;
+}
+
+.news-item.neutral {
+  border-color: #2196f3;
+}
+
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.year-badge {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.8em;
+}
+
+.meme-comment {
+  margin: 10px 0;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  font-style: italic;
+}
+
+.what-if-button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #bb86fc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.8em;
+}
+
+.what-if-button:hover {
+  background: rgba(187, 134, 252, 0.1);
+}
+
+/* Technical Analysis Styles */
+.technical-panel {
+  background: rgba(30, 30, 40, 0.7);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.indicator-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.indicator-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid;
+  border-radius: 12px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.indicator-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.indicator-detail {
+  margin-top: 10px;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  font-size: 0.9em;
+}
+
+/* Gamification Styles */
+.profile-stats {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 12px;
+  margin: 15px 0;
+}
+
+.level-bar {
+  margin-bottom: 10px;
+}
+
+.xp-track {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  margin: 5px 0;
+  overflow: hidden;
+}
+
+.xp-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #ff9800, #ff5722);
+  border-radius: 4px;
+}
+
+.history-stats p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.achievement-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffeb3b;
+  padding: 10px 15px;
+  border-radius: 8px;
+  animation: popIn 0.3s ease-out;
+  z-index: 1000;
+}
+
+@keyframes popIn {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+  
+  .simulation-viz {
+    padding: 8px;
+  }
+}

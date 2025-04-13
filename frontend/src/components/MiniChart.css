@@ -1,0 +1,25 @@
+.mini-chart {
+  display: inline-block;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+
+.reactions {
+  display: flex;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.reaction-btn {
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 2px 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.reaction-btn:hover {
+  background: #f0f0f0;
+  transform: scale(1.1);
+}

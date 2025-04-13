@@ -1,0 +1,71 @@
+.command-builder {
+  padding: 1rem;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #1a1a1a;
+}
+
+.command-builder .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.command-builder select, 
+.command-builder input {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.command-builder .param-group {
+  margin-bottom: 1rem;
+}
+
+.command-builder .help {
+  font-size: 0.8rem;
+  color: #999;
+  display: block;
+}
+
+.command-builder .error {
+  color: #ff6b6b;
+  font-size: 0.8rem;
+}
+
+.command-builder .preview {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #222;
+  border-radius: 4px;
+}
+
+.command-builder .actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.command-builder button {
+  padding: 0.5rem 1rem;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.command-builder button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tutorial-hint {
+  padding: 0.5rem;
+  background: rgba(100, 100, 255, 0.2);
+  border-left: 3px solid #6464ff;
+  margin-bottom: 1rem;
+}
